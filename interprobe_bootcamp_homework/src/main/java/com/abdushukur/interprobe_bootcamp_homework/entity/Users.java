@@ -4,12 +4,12 @@ package com.abdushukur.interprobe_bootcamp_homework.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "USER")
-public class User {
+@Table(name = "USERS")
+public class Users {
 
     @Id
-    @GeneratedValue(generator = "USER")
-    @SequenceGenerator(name = "USER", sequenceName = "USER_ID_SEQ")
+    @GeneratedValue(generator = "USERS")
+    @SequenceGenerator(name = "USERS", sequenceName = "USERS_ID_SEQ")
     private Long id;
 
     @Column(name = "NAME", length = 50, nullable = false)

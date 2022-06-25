@@ -11,17 +11,17 @@ public class ProductComment {
     @SequenceGenerator(name="PRODUCT_COMMENT", sequenceName = "PRODUCT_COMMENT_ID_SEQ")
     private Long id;
 
-    @Column(name = "COMMENT",length =500)
-    private String comment;
+    @Column(name = "COMMENT_TEXT",length =500)
+    private String commentText;
 
     @Column(name = "COMMENT_DATE")
     private String commentDate;
 
     @Column(name = "PRODUCT_ID")
-    private String productId;
+    private Long productId;
 
     @Column(name = "USER_ID")
-    private String userId;
+    private Long userId;
 
 
 

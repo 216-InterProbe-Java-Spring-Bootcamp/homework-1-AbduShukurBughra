@@ -20,5 +20,8 @@ public class Product {
         @Column(name = "EXPIRATION_DATE", length = 100, nullable = false)
         private String expirationDate; //
 
+        @Column(name = "IS_EXPIRED", length = 100)
+        private Integer isExpired;
+
 
 }
