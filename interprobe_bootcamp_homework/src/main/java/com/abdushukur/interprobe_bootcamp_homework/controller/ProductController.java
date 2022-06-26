@@ -22,8 +22,7 @@ public class ProductController {
         return ResponseEntity.ok(ExpiredProducts);
     }
 
-    //7. Son kullanma tarihi geçmemiş ürünleri listeleyen bir metot yazınız. (Son kullanma tarihi boş
-    //olanlar da gelmeli.)
+    //7. Son kullanma tarihi geçmemiş ürünleri listeleyen bir metot yazınız. (Son kullanma tarihi boş olanlar da gelmeli.)
     @GetMapping("/productsNotExpired")
     public ResponseEntity getProductsNotExpired() {
         List<Product> ExpiredProducts = productDao.findProductsByIsExpiredEquals0();
